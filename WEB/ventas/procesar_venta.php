@@ -32,7 +32,8 @@ if ($result->num_rows > 0) {
             $stmt_update_stock->bind_param("ii", $nuevo_stock, $id_producto);
             $stmt_update_stock->execute();
 
-            echo "Venta realizada con éxito.";
+            header("Location: ../stock.php");
+            exit();
         } else {
             echo "Error al realizar la venta.";
         }
