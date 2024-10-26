@@ -21,7 +21,6 @@ CREATE TABLE Ventas (
 );
 
 
--- Tabla de Reportes (para registrar productos más vendidos y menos vendidos)
 CREATE TABLE Reportes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     producto_mas_vendido INT,

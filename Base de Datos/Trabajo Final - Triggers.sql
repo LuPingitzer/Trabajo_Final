@@ -12,7 +12,6 @@ END //
 DELIMITER ;
 
 DELIMITER //
-
 CREATE TRIGGER actualizar_mas_vendido
 AFTER UPDATE ON Productos
 FOR EACH ROW
@@ -33,5 +32,4 @@ BEGIN
     INSERT INTO Reportes (producto_mas_vendido, producto_menos_vendido)
     VALUES (prod_mas_vendido, prod_menos_vendido);
 END //
-
 DELIMITER ;
